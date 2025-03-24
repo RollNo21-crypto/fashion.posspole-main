@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSSSPOLE FASHION</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="Assets/logo.svg" alt="Logo">
+      </div>
+      <!-- Replacing Text with Image -->
+      <div class="title">
+        <img src="Assets/POSSPOLE LUXURY FASHION.svg" alt="POSSSPOLE LUXURY FASHION" class="title-img">
+      </div>
+      <div class="country">IND</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav id="nav-links">
+      <a href="#mainCarousel">Home</a>
+      <a href="#studio">Studio</a>
+      <a href="#collections">Collections</a>
+      <a href="#material">MATERIAL</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#" onclick="openContactPopup()">CONTACT US</a>
+    </nav>
+    <div id="contactPopup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeContactPopup()">&times;</span>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:letmein@posspole.com">letmein@posspole.com</a></p>
+        <p>Phone: <a href="tel:+918618145049">+91 8618145049</a></p>
+        <form id="popupForm" onsubmit="submitPopup(event)">
+          <input type="email" id="userEmail" placeholder="Enter your email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+   
+    
+  </header>
+   <!-- ✅ Contact Popup -->
+
+
+</div>
+  <!-- Main Carousel with Auto Slide -->
+  <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+    <ol class="carousel-indicators">
+      <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#mainCarousel" data-slide-to="1"></li>
+      <li data-target="#mainCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/hero_banner_website.jpg" class="d-none d-md-block w-100" alt="Desktop Banner 1">
+        <img src="assets/mobile_view_herobanner1.jpg" class="d-block d-md-none w-100" alt="Mobile Banner 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/hero_banner_website2.jpg" class="d-none d-md-block w-100" alt="Desktop Banner 2">
+        <img src="assets/mobile_view_herobanner2.jpg" class="d-block d-md-none w-100" alt="Mobile Banner 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/hero_banner_website3.jpg" class="d-none d-md-block w-100" alt="Desktop Banner 3">
+        <img src="assets/mobile_view_herobanner3.jpg" class="d-block d-md-none w-100" alt="Mobile Banner 3">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/hero_banner_website4.jpg" class="d-none d-md-block w-100" alt="Desktop Banner 4">
+        <img src="assets/mobile_view_herobanner4.jpg" class="d-block d-md-none w-100" alt="Mobile Banner 4">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- Craft Section -->
+  <section id="studio" class="craft-section">
+    <h2 class="product-title">WHERE CRAFTSMANSHIP COMES ALIVE</h2>
+    <div class="craft-content">
+      <div class="craft-text">
+        <p>
+          Posspole’s division, Luxury Fashion, offers an exquisite collection of leather products such as jackets,
+          military shoes, travel bags, handbags, and watch straps. Our dedication to quality, ethical sourcing, and
+          craftsmanship guarantee competitive pricing and exceptional products. Our clientele can purchase our curated
+          collection online or come to our Fashion Experience Center for handcrafted bespoke leather pieces. With
+          exclusive suppliers and tanneries, we ensure the highest grade materials available. Our number one priority
+          is client satisfaction.
+        </p>
+      </div>
+      <div class="craft-image">
+        <img src="Assets/fashionbackgroundweb.jpg" alt="Craftsmanship Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Carousel -->
+  <section id="collections" class="product-section">
+    <h2 class="product-title">OUR TIMELESS PIECES</h2>
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-pause="false">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="product-slide">
+                    <div class="product-item">
+                        <img src="Assets/bag2.png" alt="Leather Jacket Brown">
+                        <p>Leather Jackets Brown</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/jackets2.png" alt="Leather Bag">
+                        <p>Leather Bag</p>
+                    </div>
+                    <div class="product-item d-none d-md-block">
+                        <img src="Assets/SHOESEE.png" alt="Army Shoes">
+                        <p>Army Shoes</p>
+                    </div>
+                    <div class="product-item d-none d-md-block">
+                        <img src="Assets/jacket3.png" alt="Leather Jacket Black">
+                        <p>Leather Jacket Black</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 (Repeating Products for Smooth Carousel) -->
+            <div class="carousel-item">
+                <div class="product-slide">
+                    <div class="product-item">
+                        <img src="Assets/SHOESEE.png" alt="Army Shoes">
+                        <p>Army Shoes</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="Assets/jacket3.png" alt="Leather Jacket Black">
+                        <p>Leather Jacket Black</p>
+                    </div>
+                    <div class="product-item d-none d-md-block">
+                        <img src="Assets/bag2.png" alt="Leather Jacket Brown">
+                        <p>Leather Jackets Brown</p>
+                    </div>
+                    <div class="product-item d-none d-md-block">
+                        <img src="Assets/jackets2.png" alt="Leather Bag">
+                        <p>Leather Bag</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="Category" class="category-section">
+    <h4 class="product-title">CATEGORY</h4>
+    <div class="category-container">
+      <div class="category-item" data-category="JACKETS">
+        <img src="Assets/catergory_jacket.png" alt="Jackets">
+        <p>Jackets</p>
+      </div>
+      <div class="category-item" data-category="GIFTS">
+        <img src="Assets/catergory_gifting.png" alt="Gifts">
+        <p>Gifts</p>
+      </div>
+      <div class="category-item" data-category="BAGS">
+        <img src="Assets/catergory_bag.png" alt="Bags">
+        <p>Bags</p>
+      </div>
+      <div class="category-item" data-category="Armyshoes">
+        <img src="Assets/catergory_miliraty.png" alt="Bags">
+        <p>Bags</p>
+      </div>
+      <div class="category-item" data-category="Shoes">
+        <img src="Assets/catergory_C_shoe.png" alt="Bags">
+        <p>Shoes</p>
+      </div>
+    </div>
+  </section>
+ 
+
+  <section class="dual-banner-section">
+    <div class="dual-banner-item" data-category="JACKETS">
+      <div class="dual-banner-img">
+        <img src="Assets/jacketbanner1.jpg" alt="Leather Jackets">
+        <div class="dual-banner-content">
+          <a href="#" class="dual-shop-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="dual-banner-item" data-category="Armyshoes">
+      <div class="dual-banner-img">
+        <img src="Assets/military_shoeeees.jpg" alt="Military Boots">
+        <div class="dual-banner-content">
+          <a href="#" class="dual-shop-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="hero-banner clickable-hero" data-category="JACKETS">
+    <img src="Assets/jackets-banner.png" alt="POSSSPOLE Luxury Fashion Banner">
+  </section>
+  
+
+  <section class="dual-banner-section">
+    <div class="dual-banner-item" data-category="BAGS">
+      <div class="dual-banner-img">
+        <img src="Assets/bag_banner.jpg" alt="Leather Bags">
+        <div class="dual-banner-content">
+          <a href="#" class="dual-shop-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="dual-banner-item" data-category="GIFTS">
+      <div class="dual-banner-img">
+        <img src="Assets/beltbanner.jpg" alt="Belts / Gifts">
+        <div class="dual-banner-content">
+          <a href="#" class="dual-shop-btn">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="hero-banner clickable-hero" data-category="BAGS">
+    <img src="Assets/bag_banner_3.jpg" alt="POSSSPOLE Luxury Fashion Banner">
+  </section>
+  
+
+  <section id="productCarousel" class="product-carousel-section">
+    <h2 class="product-title">PRODUCTS</h2>
+  
+    <div id="productCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+      <div class="carousel-inner">
+  
+        <div class="carousel-item active">
+          <div class="product-carousel-slide">
+            <img src="Assets/carosel_bag1.jpg" alt="Product 1">
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+            <div class="product-carousel-slide">
+              <img src="Assets/carosel_bag2.jpg" alt="Product 2">
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="product-carousel-slide">
+            <img src="Assets/carosel_shoe.jpg" alt="Product 3">
+          </div>
+      </div>
+      </div>
+  
+      <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="hero-banner clickable-hero" data-category="GIFTS">
+    <img src="Assets/gift_banner.jpg" alt="POSSSPOLE Luxury Fashion Banner">
+  </section>
+
+  
+
+  <h2 id="material" class="product-carousel-title">HEART OF LUXURY</h2>
+  <section class="hero-banner">
+    
+    <img src="Assets/heart_of_luxury.jpg" alt="POSSSPOLE Luxury Fashion Banner">
+    
+  </section>
+  
+  
+  <section id="blogs" class="blog-section">
+    <h2 class="product-title">BLOGS</h2>
+  
+    <div class="blog-container">
+      <div class="blog-card" onclick="window.location.href='blog.html?blog=blog1'">
+        <img src="Assets/1.png" alt="Blog 1">
+        <h3>Razzle, Dazzle, Lookbook</h3>
+        <p>Leather Jacket Styling Guide</p>
+      </div>
+  
+      <div class="blog-card" onclick="window.location.href='blog.html?blog=blog2'">
+        <img src="Assets/2.png" alt="Blog 2">
+        <h3>Zippers, Buttons, and Stitching</h3>
+        <p>Crafting the Perfect Bag</p>
+      </div>
+  
+      <div class="blog-card" onclick="window.location.href='blog.html?blog=blog3'">
+        <img src="Assets/3.png" alt="Blog 3">
+        <h3>Choosing the Right Fabric</h3>
+        <p>Why Quality Matters</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Subscribe Popup -->
+ <!-- Subscription Popup -->
+<div class="popup-overlay" id="subscribePopup">
+  <div class="popup-content">
+    <h3>Subscribe to our Newsletter</h3>
+    <input type="email" id="subscriberEmail" placeholder="Enter your email">
+    <button onclick="submitSubscription()">Subscribe</button>
+    <button class="popup-cancel-btn" onclick="closePopup()">Cancel</button>
+  </div>
+</div>
+
+<!-- Sticky Subscribe Button (Hidden initially) -->
+<button class="floating-subscribe-btn" id="subscribeBtn" onclick="openPopup()">Subscribe</button>
+
+
+
+
+
+<footer class="footer-section">
+  <div class="footer-top">
+    <p><em>Let’s Connect</em> letmeinposspole.com | +91 8618145049</p>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#mainCarousel">Home</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#collections">Collections</a></li>
+       
+        <li><a href="#productCarousel">Products</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+     
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Any Queries</h4>
+      <ul>
+        <li><a href="mailto:letmeinposspole.com">Email Us</a></li>
+        <li><a href="tel:+918618145049">Call: +91 8618145049</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="address">
+      <span class="location-icon"></span>POSSSPOLE PVT LTD, Krishi Bhavan, Before, Cubbon Park Rd, 
+      Nunegundlapalli, Ambedkar Veedhi, Bengaluru, Karnataka 560001
+    </div>
+
+    <!--
+      <div class="footer-social">
+      <span>Follow Us</span>
+      <div class="social-icons">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+
+    -->
+
+
+    
+  </div>
+</footer>
+
+
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

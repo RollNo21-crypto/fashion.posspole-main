@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>POSSSPOLE Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo"><img src="Assets/logo.svg" alt="Logo"></div>
+      <div class="title"><img src="Assets/POSSPOLE LUXURY FASHION.svg" class="title-img"></div>
+      <div class="country">IND</div>
+      <div class="cart-btn" onclick="openPopup()">🛒 Cart (<span id="cart-count">0</span>)</div>
+    </div>
+    <nav id="nav-links">
+      <a href="studio.html">STUDIO</a>
+      <a href="collections.html">COLLECTIONS</a>
+      <a href="material.html">MATERIAL</a>
+      <a href="blogs.html">BLOGS</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+  </header>
+
+  <!-- Category Buttons -->
+  <section class="category-section">
+
+      <!--  <h2 class="section-title">CATEGORY</h2> -->
+
+   
+    <div class="category-container">
+  
+      <div class="category-item" data-category="JACKETS" onclick="loadCategory('JACKETS')">
+        <img src="Assets/catergory_jacket.png" alt="Jackets">
+        <p>Jackets</p>
+      </div>
+  
+      <div class="category-item" data-category="GIFTS" onclick="loadCategory('GIFTS')">
+        <img src="Assets/catergory_gifting.png" alt="Gifts">
+        <p>Gifts</p>
+      </div>
+  
+      <div class="category-item" data-category="BAGS" onclick="loadCategory('BAGS')">
+        <img src="Assets/catergory_bag.png" alt="Bags">
+        <p>Bags</p>
+      </div>
+  
+      <div class="category-item" data-category="Armyshoes" onclick="loadCategory('Armyshoes')">
+        <img src="Assets/catergory_miliraty.png" alt="Army Shoes">
+        <p>Army Shoes</p>
+      </div>
+      <div class="category-item" data-category="Shoes" onclick="loadCategory('Shoes')">
+        <img src="Assets/catergory_C_shoe.png" alt="Shoes">
+        <p>Army Shoes</p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section class="product-display-section">
+
+    <!--
+        <h2 class="section-title-products">PRODUCTS</h2>
+
+    -->
+  
+    <div id="product-container" class="product-grid"></div>
+  </section>
+
+  <!-- MIDDLE Send Query Button -->
+  <div class="floating-query-btn">
+    <button class="requery-btn" onclick="openPopup()">Send Query</button>
+  </div>
+
+  <!-- Query Form Popup -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Submit Your Query</h2>
+      <form id="popup-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <div><strong>Cart Items:</strong>
+          <ul id="cart-items"></ul>
+        </div>
+        <button type="submit" class="requery-btn">Submit Query</button>
+        <button type="button" class="requery-btn" onclick="closePopup()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer-section">
+    <div class="footer-top">
+      <p><em>Let’s Connect</em> letmeinposspole.com | +91 8618145049</p>
+    </div>
+  
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#mainCarousel">Home</a></li>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#collections">Collections</a></li>
+         
+          <li><a href="#productCarousel">Products</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+       
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Any Queries</h4>
+        <ul>
+          <li><a href="mailto:letmeinposspole.com">Email Us</a></li>
+          <li><a href="tel:+918618145049">Call: +91 8618145049</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="address">
+        <span class="location-icon"></span>POSSSPOLE PVT LTD, Krishi Bhavan, Before, Cubbon Park Rd, 
+        Nunegundlapalli, Ambedkar Veedhi, Bengaluru, Karnataka 560001
+      </div>
+  
+      <!--
+        <div class="footer-social">
+        <span>Follow Us</span>
+        <div class="social-icons">
+          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+          <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+          <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+  
+  
+      -->
+  
+  
+      
+    </div>
+  </footer>
+  
+  <script src="product.js"></script>
+</body>
+
+</html>
